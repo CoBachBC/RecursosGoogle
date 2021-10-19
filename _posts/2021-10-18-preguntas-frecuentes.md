@@ -13,4 +13,6 @@ questions:
     answer: 'No. Las cuentas @cobachbc.edu.mx se asignan a los usuarios con su nombre o matrícula, pero no son cuentas personales. Todas las cuentas son administradas por CoBach BC y son para uso exclusivo de las necesidades institucionales, ya seas empleado o alumno.'
   - question: '¿Entonces alguien puede acceder a mi cuenta sin que lo sepa?'
     answer: 'No. A pesar de ser cuentas administradas por la institución, nadie puede ver el contenido de tu cuenta sin saber la contraseña. La administración de las cuentas de alumnos corresponde a la Dirección de servicios educativos, y para las cuentas de empleados al Departamento de personal.'
+  - question: ''
+    answer: ''
 ---
