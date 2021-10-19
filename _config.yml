@@ -10,12 +10,12 @@ title: "Recursos Google CoBach BC"
 email: admin@cobachbc.edu.mx
 description: "odos lo que necesitas saber sobre tu cuenta @cobachbc.edu.mx"
 baseurl: ""
-url: "http://quinalha.me"
+url: "http://google.cobachbc.edu.mx/"
 twitter_username: 
 github_username:  
-color_theme:  "#0081ff"
+color_theme:  "#502C1E"
 color_text:  "#fff"
-language:  "en"
+language:  "es"
 
 # Build settings
 markdown: kramdown
