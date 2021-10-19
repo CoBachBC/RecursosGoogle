@@ -1,25 +1,28 @@
-title:              Recursos Google CoBach BC
-email:              admin@cobachbc.edu.mx
-description:        Todos lo que necesitas saber sobre tu cuenta @cobachbc.edu.mx
-author:             Administrador de cuentas CoBach BC
-baseurl:            ""
-url:                "https://startbootstrap.github.io"
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-# Social Profiles
-twitter_username:   
-github_username:    
-facebook_username:  
-instagram_username:  
-linkedin_username:
-
-# Add your google-analytics ID here to activate google analytics
-google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+# Site settings
+title: "Recursos Google CoBach BC"
+email: admin@cobachbc.edu.mx
+description: "odos lo que necesitas saber sobre tu cuenta @cobachbc.edu.mx"
+baseurl: ""
+url: "http://quinalha.me"
+twitter_username: 
+github_username:  
+color_theme:  "#0081ff"
+color_text:  "#fff"
+language:  "en"
 
 # Build settings
-markdown:           kramdown
-paginate:           5
-paginate_path:      "/posts/page:num/"
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+markdown: kramdown
+permalink: /:title/
+gems: [jekyll-paginate]
+paginate: 5
+
+# Plugins
+plugins_dir:
+  - jekyll-admin
