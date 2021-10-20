@@ -8,7 +8,7 @@ by: 'Administrador de cuentas CoBach BC'
 icon: 'lock'
 questions:
   - question: '¿Quiénes pueden ver mi información?'
-    answer: 'Las cuentas de correo que usamos en CoBach BC son cuentas de Google, por lo que al tener un usuario @cobachbc.edu.mx tienes acceso a tu correo institucional a través de Gmail, así como a todas las demás aplicaciones que ofrece Google, como Drive, Documentos, Calendario, Meet, Classroom, etc.'
+    answer: 'Los datos se guardan exclusivamente en la cuenta que los origina, por lo que solo el usuario de la cuenta puede ver su información. CoBach BC tiene acceso a datos técnicos de las cuentas, como la cantidad de almacenamiento que está usando, el número de correos o documentos, pero no puede consultar específicamente el contenido.'
   - question: '¿Entonces alguien puede acceder a mi cuenta sin que lo sepa?'
-    answer: 'No. A pesar de ser cuentas administradas por la institución, nadie puede ver el contenido de tu cuenta sin saber la contraseña. La administración de las cuentas de alumnos corresponde a la Dirección de servicios educativos, y para las cuentas de empleados al Departamento de personal.'
+    answer: 'No. A pesar de ser cuentas administradas por la institución, nadie puede ver el contenido de tu cuenta sin saber la contraseña, por lo que si esta se modifica el usuario sabrá que hubo una intrusión. La administración de las cuentas de alumnos corresponde a la Dirección de servicios educativos, y para las cuentas de empleados al Departamento de personal.'
 ---
