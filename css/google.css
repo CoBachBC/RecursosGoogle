@@ -1,4 +1,14 @@
 .list-post-description a{font-weight: bold;}
+
 .menu{background-color: #ffffff !important;
 color: #444444 !important;}
-.menu a{color:#444444 !important}
+.menu a{color:#444444 !important;
+font-weight: bold;}
+
+.barra-google div{margin: 0;
+padding: 0;
+width: 25%;}
+.barra-google .a{background-color: #4285f4;}
+.barra-google .b{background-color: #ea4335;}
+.barra-google .c{background-color: #fbbc05;}
+.barra-google .d{background-color: #34a853;}
