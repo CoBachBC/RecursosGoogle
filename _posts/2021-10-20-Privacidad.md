@@ -1,18 +1,12 @@
 ---
 layout: post
-title: 'Mi cuenta @cobachbc.edu.mx'
-description: 'Aprende cómo usar correctamente tu cuenta @cobachbc.edu.mx.'
-date:   2021-10-18 10:30:00 -0700
-categories: ayuda google cuenta cuentas
+title: 'Sobre tu privacidad y datos'
+description: 'Todo sobre los datos que se almacenan en tu cuenta, quién puede acceder y cómo pueden ser vistos'
+date:   2021-10-20 10:30:00 -0700
+categories: ayuda google cuenta cuentas privacidad seguridad datos personales
 by: 'Administrador de cuentas CoBach BC'
-icon: 'user'
+icon: 'lock'
 questions:
-  - question: '¿Qué es una cuenta @cobachbc.edu.mx?'
+  - question: '¿Quiénes pueden ver mi información?'
     answer: 'Las cuentas de correo que usamos en CoBach BC son cuentas de Google, por lo que al tener un usuario @cobachbc.edu.mx tienes acceso a tu correo institucional a través de Gmail, así como a todas las demás aplicaciones que ofrece Google, como Drive, Documentos, Calendario, Meet, Classroom, etc.'
-  - question: 'Mi cuenta tiene mi nombre ¿Es una cuenta personal?'
-    answer: 'No. Las cuentas @cobachbc.edu.mx se asignan a los usuarios con su nombre o matrícula, pero no son cuentas personales. Todas las cuentas son administradas por CoBach BC y son para uso exclusivo de las necesidades institucionales, ya seas empleado o alumno.'
-  - question: '¿Entonces alguien puede acceder a mi cuenta sin que lo sepa?'
-    answer: 'No. A pesar de ser cuentas administradas por la institución, nadie puede ver el contenido de tu cuenta sin saber la contraseña. La administración de las cuentas de alumnos corresponde a la Dirección de servicios educativos, y para las cuentas de empleados al Departamento de personal.'
-  - question: 'Olvidé mi contraseña ¿Cómo  la recupero?'
-    answer: 'Si eres estudiante puedes solicitar en tu plantel que la restablezcan. Dependiendo del tipo de plantel necesitas preguntar en el laboratorio de cómputo o en la dirección del plantel. Si eres empleado, <a href="https://docs.google.com/forms/d/e/1FAIpQLSfr0qX0ZHR47YA0lQLf0mFm20xcHNqjHcAmI52tq-lsULeLaw/viewform?formkey=dDNxNG1adTR4b0tIZ3l2NllxSVNrMnc6MQ&ptok=7704567836211532901&ifq">accede a este formulario</a> para solicitar restablecer tu contraseña.'
 ---
