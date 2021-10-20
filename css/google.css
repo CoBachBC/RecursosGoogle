@@ -7,8 +7,11 @@ font-weight: bold;}
 
 .barra-google div{margin: 0;
 padding: 0;
-width: 25%;}
+width: 25%;
+float: left;}
 .barra-google .a{background-color: #4285f4;}
 .barra-google .b{background-color: #ea4335;}
 .barra-google .c{background-color: #fbbc05;}
 .barra-google .d{background-color: #34a853;}
+
+.clear{clear: both;}
