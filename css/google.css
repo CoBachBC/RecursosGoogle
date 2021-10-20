@@ -1,3 +1,4 @@
 .list-post-description a{font-weight: bold;}
 .menu{background-color: #ffffff !important;
-color: #444444;}
+color: #444444 !important;}
+.menu a{color:#444444 !important}
