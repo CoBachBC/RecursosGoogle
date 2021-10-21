@@ -20,7 +20,8 @@ margin-bottom: -0.25rem;}
 .list-post-description a{color: #4285f4 !important;}
 
 .footer{background-color: #555555 !important;
-font-weight: bold;}
+font-weight: bold;
+background: url("../assets/img/pattern.svg"),rgba(85,85,85,0.9);}
 .footer a{color: #ffffff !important;}
 
 .clear{clear: both;}
