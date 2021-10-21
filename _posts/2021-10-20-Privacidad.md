@@ -2,7 +2,7 @@
 layout: post
 title: 'Sobre tu privacidad y datos'
 description: 'Privacidad de tu información. Monitoreo de tu cuenta.'
-date:   2021-10-20 10:30:00 -0700
+date:   2021-10-17 10:30:00 -0700
 categories: ayuda google cuenta cuentas privacidad seguridad datos personales
 by: 'Administrador de cuentas CoBach BC'
 icon: 'lock'
