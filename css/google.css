@@ -26,5 +26,6 @@ background: url("../assets/img/pattern.svg"),rgba(85,85,85,0.9);}
 
 .clear{clear: both;}
 
-#grupos table{border-collapse: collapse;}
+#grupos table{border-collapse: collapse;
+margin-bottom:2rem;}
 #grupos tr{border-bottom: #555555 solid 1px !important;}
