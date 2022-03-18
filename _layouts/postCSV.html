@@ -58,7 +58,7 @@ layout: default
     function arrayToTable(tableData) {
         var table = $('<table></table>');
         var rowH = $('<tr></tr>');
-        rowH.append($('<th>Nombre</th><th>Tipo</th><th>Categoría</th><th>Temario</th>'));
+        rowH.append($('<th>Última actualización</th><th>Grupo</th><th>Dirección</th><th>Observaciones</th>'));
         table.append(rowH);
         $(tableData).each(function (i, rowData) {
             var row = $('<tr></tr>');
@@ -73,7 +73,7 @@ layout: default
     
     $.ajax({
         type: "GET",
-        url: "https://docs.google.com/a/asesoreducativo.mx/spreadsheets/d/1eyIlhOTpciiGeSdoXbJ4LUyOritdfNrqlCakawQcAZk/pub?single=true&gid=0&range=a2:d&output=csv",
+        url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTVQrJAvqMJCHd7rQdj72IYS_8rKPn8RKBXFh1IqH9tA0DjvmjrMn7BzPA9WCG2bFTN9iZDjgKwS4UK/pub?gid=854148387&single=true&output=csv",
         success: function (data) {
             $('#oferta').append(arrayToTable(Papa.parse(data).data));
         }
