@@ -26,4 +26,4 @@ background: url("../assets/img/pattern.svg"),rgba(85,85,85,0.9);}
 
 .clear{clear: both;}
 
-#grupos tr{border-bottom: #555555 solid 2px;}
+#grupos tr{border-bottom: #555555 solid 2px !important;}
