@@ -47,7 +47,7 @@ layout: default
 
     <!-- content -->
     {{ content }}
-    <div id="oferta"></div>
+    <div id="grupos"></div>
     <!-- content -->
   </article>
 </div>
@@ -75,7 +75,7 @@ layout: default
         type: "GET",
         url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTVQrJAvqMJCHd7rQdj72IYS_8rKPn8RKBXFh1IqH9tA0DjvmjrMn7BzPA9WCG2bFTN9iZDjgKwS4UK/pub?gid=854148387&single=true&output=csv",
         success: function (data) {
-            $('#oferta').append(arrayToTable(Papa.parse(data).data));
+            $('#grupos').append(arrayToTable(Papa.parse(data).data));
         }
     });
 </script>
