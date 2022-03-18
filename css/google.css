@@ -25,3 +25,5 @@ background: url("../assets/img/pattern.svg"),rgba(85,85,85,0.9);}
 .footer a{color: #ffffff !important;}
 
 .clear{clear: both;}
+
+#grupos tr{border-bottom:solid 1px #555555;}
