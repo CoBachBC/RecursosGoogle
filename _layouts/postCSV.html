@@ -60,11 +60,9 @@ layout: default
       rowH.append($('<th>Última actualización</th><th>Grupo</th><th>Dirección</th><th>Observaciones</th><th>Integrantes</th>'));
       table.append(rowH);
       $(tableData).each(function (i, rowData) {
-            let count = 0;
             var row = $('<tr></tr>');
             $(rowData).each(function (j, cellData) {
-                row.append($('<td>'+cellData+' '+count+'</td>'));
-                count = count++;
+                row.append($('<td>'+cellData+'</td>'));
             });
             table.append(row);
         });
