@@ -65,7 +65,7 @@ layout: default
             var row = $('<tr></tr>');
             $(rowData).each(function (j, cellData) {
                 row.append($('<td>'+cellData+' '+count+'</td>'));
-                count + 1;
+                count = count++;
             });
             table.append(row);
         });
