@@ -56,12 +56,12 @@ layout: default
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.js"></script>
 <script>
     function arrayToTable(tableData) {
-        let count = 0;
-        var table = $('<table></table>');
-        var rowH = $('<tr></tr>');
-        rowH.append($('<th>Última actualización</th><th>Grupo</th><th>Dirección</th><th>Observaciones</th><th>Integrantes</th>'));
-        table.append(rowH);
-        $(tableData).each(function (i, rowData) {
+      var table = $('<table></table>');
+      var rowH = $('<tr></tr>');
+      rowH.append($('<th>Última actualización</th><th>Grupo</th><th>Dirección</th><th>Observaciones</th><th>Integrantes</th>'));
+      table.append(rowH);
+      $(tableData).each(function (i, rowData) {
+            let count = 0;
             var row = $('<tr></tr>');
             $(rowData).each(function (j, cellData) {
                 row.append($('<td>'+cellData+' '+count+'</td>'));
