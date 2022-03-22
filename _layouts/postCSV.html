@@ -63,9 +63,9 @@ layout: default
         $(tableData).each(function (i, rowData) {
             var row = $('<tr></tr>');
             $(rowData).each(function (j, cellData) {
-                j = 0;
-                row.append($('<td>'+cellData+' '+j+'</td>'));
-                J ++;
+                let count = 0;
+                row.append($('<td>'+cellData+' '+count+'</td>'));
+                count++;
             });
             table.append(row);
         });
