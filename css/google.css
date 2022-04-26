@@ -32,8 +32,9 @@ margin-bottom:3rem;}
 #grupos tbody{line-height: 1rem;
 color:#444444;}
 #grupos td{padding:.25rem;}
-#grupos tr{border-bottom: #555555 solid 1px !important;}
+#grupos tr{border-bottom: #555 solid 1px !important;}
 #grupos table tr td:nth-child(3){text-align: center;
 font-weight: bold;}
 #grupos table tr td:nth-child(5){text-align: center;
-font-size: .7rem;}
+font-size: .7rem;
+color:#000;}
