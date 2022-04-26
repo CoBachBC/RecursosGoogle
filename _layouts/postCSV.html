@@ -58,7 +58,7 @@ layout: default
     function arrayToTable(tableData) {
       var table = $('<table></table>');
       var rowH = $('<tr></tr>');
-      rowH.append($('<th>Última actualización</th><th>Grupo</th><th>Dirección</th><th>Observaciones</th><th>Integrantes</th>'));
+      rowH.append($('<th>Última actualización</th><th>Grupo</th><th>Dirección<br><small>@cobachbc.edu.mx</small></th><th>Observaciones</th><th>Integrantes</th>'));
       table.append(rowH);
       $(tableData).each(function (i, rowData) {
             var row = $('<tr></tr>');
