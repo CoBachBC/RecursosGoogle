@@ -29,6 +29,8 @@ background: url("../assets/img/pattern.svg"),rgba(85,85,85,0.9);}
 #grupos table{border-collapse: collapse;
 margin-top:2rem;
 margin-bottom:3rem;}
+#grupos tbody{line-height: 1rem;
+color:#444444;}
 #grupos td{padding:.25rem;}
 #grupos tr{border-bottom: #555555 solid 1px !important;}
 #grupos table tr td:nth-child(3){text-align: center;
