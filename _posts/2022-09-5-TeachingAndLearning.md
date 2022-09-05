@@ -1,5 +1,5 @@
 ---
-layout: postCSV
+layout: post
 title: "Licencias Teaching and Learning"
 description: "Detalles adicionales de funciones para usuarios con licenciamiento Teaching and Learning asignado"
 date:   2022-09-05 10:26:00 -0700
@@ -23,4 +23,4 @@ El liceniamiento **Teaching and Learning** proporciona funcionalidades adicional
 - Reportes de originalidad ilimitados para detectar plagio
 - **PRÓXIMAMENTE**: Actividades de práctica prediseñadas
 
-Conoce todos los beneficios de **Teaching and Learning** en (este enlace)[https://edu.google.com/intl/es_mx/workspace-for-education/editions/teaching-and-learning-upgrade/].
+Conoce todos los beneficios de **Teaching and Learning** en [este enlace](https://edu.google.com/intl/es_mx/workspace-for-education/editions/teaching-and-learning-upgrade/).
