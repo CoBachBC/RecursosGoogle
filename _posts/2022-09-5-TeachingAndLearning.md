@@ -5,7 +5,7 @@ description: "Detalles adicionales de funciones para usuarios con licenciamiento
 date:   2022-09-05 10:26:00 -0700
 categories: google licenciamiento teaching learning
 by: 'Administrador de cuentas CoBach BC'
-icon: 'key'
+icon: 'plus-circle'
 ---
 
 El liceniamiento **Teaching and Learning** proporciona funcionalidades adicionales para docentes. Si te han asignado una de dichas licencias, podrás:
