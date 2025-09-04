@@ -1,0 +1,80 @@
+---
+layout: default
+---
+
+<!-- breadcrumbs -->
+<div class="size margin" data-aos="fade-right" data-aos-delay="100" data-aos-offset="0">
+  {% include breadcrumbs.html path=page.path title=page.title %}
+</div>
+<!-- breadcrumbs -->
+
+<div class="size margin min-height">
+  <article>
+    <!-- titles -->
+    <h1 class="post-title" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">{{ page.title }}</h1>
+    <div class="post-date" data-aos="fade-left" data-aos-delay="300" data-aos-offset="0">
+      <time>{{ page.date | date_to_string }}</time>
+      <span class="reading-time" title="Estimated read time"> - {{ minutesText }}</span>
+    </div>
+    <!-- titles -->
+
+    <!-- posts -->
+    <div class="margin-top-20 margin-bottom-50">
+      {% for x in page.questions %}
+      <div class="list-item-2 container wrap-reverse align-items-end justify-content-center" data-aos="fade-up" data-aos-delay="0" data-aos-offset="0">
+        {% if x.image %}
+        <div class="list-item-2-img flex-basis-300 flex-grow-1" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
+          <img src="{{ site.baseurl }}/assets/img/{{ x.image }}" width="100%" alt="">
+        </div>
+        {% endif %}
+        <div class="flex-basis-400 flex-grow-5">
+          <div class="" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
+            <h2 class="list-post-title">
+            {{x.question}}
+            </h2>
+          </div>
+          <div class="" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
+            <span class="list-post-description">
+              {{x.answer}}
+            </span>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <!-- posts -->
+
+    <!-- content -->
+    {{ content }}
+    <p>Los integrantes de los grupos de correo deben actualizarse tantas veces como movimientos de personal existan. El Departamento de Personal es responsable de proporcionar al Departamento de Informática dichas actualizaciones para que se vean reflejadas en los grupos.</p>
+    <div id="grupos"></div>
+    <!-- content -->
+  </article>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.js"></script>
+<script>
+    function arrayToTable(tableData) {
+      var table = $('<table></table>');
+      var rowH = $('<tr></tr>');
+      rowH.append($('<th>Estatus</th><th>Grupo</th><th style="line-height:1rem;">Dirección<br><small style="font-size:.75rem;">@cobachbc.edu.mx</small></th><th>Observaciones</th><th>Integrantes</th>'));
+      table.append(rowH);
+      $(tableData).each(function (i, rowData) {
+            var row = $('<tr></tr>');
+            $(rowData).each(function (j, cellData) {
+                row.append($('<td>'+cellData+'</td>'));
+            });
+            table.append(row);
+        });
+        return table;
+    }
+
+    $.ajax({
+        type: "GET",
+        url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTVQrJAvqMJCHd7rQdj72IYS_8rKPn8RKBXFh1IqH9tA0DjvmjrMn7BzPA9WCG2bFTN9iZDjgKwS4UK/pub?gid=854148387&single=true&output=csv",
+        success: function (data) {
+            $('#grupos').append(arrayToTable(Papa.parse(data).data));
+        }
+    });
+</script>
