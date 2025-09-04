@@ -77,4 +77,7 @@ layout: csvSortable
             $('#adscripciones').append(arrayToTable(Papa.parse(data).data));
         }
     });
+    $(document).ready(function() {
+        $('#miTablaSuperPoderosa').DataTable();
+    });
 </script>
