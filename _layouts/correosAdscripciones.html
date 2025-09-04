@@ -46,7 +46,7 @@ layout: default
 
     <!-- content -->
     {{ content }}
-    <p>Los integrantes de los grupos de correo deben actualizarse tantas veces como movimientos de personal existan. El Departamento de Personal es responsable de proporcionar al Departamento de Informática dichas actualizaciones para que se vean reflejadas en los grupos.</p>
+    <p>Los elementos de la lista de correo deben actualizarse tantas veces como movimientos de adscripción existan.</p>
     <div id="grupos"></div>
     <!-- content -->
   </article>
@@ -58,7 +58,7 @@ layout: default
     function arrayToTable(tableData) {
       var table = $('<table></table>');
       var rowH = $('<tr></tr>');
-      rowH.append($('<th>Estatus</th><th>Grupo</th><th style="line-height:1rem;">Dirección<br><small style="font-size:.75rem;">@cobachbc.edu.mx</small></th><th>Observaciones</th><th>Integrantes</th>'));
+      rowH.append($('<th>TIPO</th><th>MUNICIPIO</th><th>NOMBRE</th><th>CORREO</th>'));
       table.append(rowH);
       $(tableData).each(function (i, rowData) {
             var row = $('<tr></tr>');
@@ -72,7 +72,7 @@ layout: default
 
     $.ajax({
         type: "GET",
-        url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTVQrJAvqMJCHd7rQdj72IYS_8rKPn8RKBXFh1IqH9tA0DjvmjrMn7BzPA9WCG2bFTN9iZDjgKwS4UK/pub?gid=854148387&single=true&output=csv",
+        url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTfrg1_TK2M91Gq_3kVfS0Td3T78PUhWAfsISiI_J4vKQ15hoHefuH_Or8Yu2_fQ2MR3-5_HlTYWCds/pub?gid=1463404145&single=true&output=csv",
         success: function (data) {
             $('#grupos').append(arrayToTable(Papa.parse(data).data));
         }
