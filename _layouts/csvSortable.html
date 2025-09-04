@@ -23,10 +23,45 @@
       json: '{{ site.baseurl }}/search.json'
     })
   </script>
-  <script>
-    let table = new DataTable('#myTable');
-  </script>
-  <script src="https://cdn.datatables.net/2.3.3/js/dataTables.min.js"></script>
+  
+  <!-- 3. INCLUIR LAS LIBRERÍAS JAVASCRIPT -->
+    <!-- Primero jQuery, ya que DataTables es un plugin de jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <!-- Luego, el archivo JavaScript de DataTables -->
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+    <!-- 4. INICIALIZAR DATATABLES EN NUESTRA TABLA -->
+    <script>
+        // Este código se ejecuta cuando el documento HTML ha cargado completamente.
+        $(document).ready(function() {
+            // Seleccionamos la tabla por su 'id' y llamamos a la función DataTable().
+            // ¡Esta única línea de código activa todas las funcionalidades!
+            $('#tabla-ejemplo').DataTable({
+                // Opcional: Aquí puedes añadir configuraciones personalizadas.
+                // Por ejemplo, para traducir la interfaz a español:
+                language: {
+                    "decimal": "",
+                    "emptyTable": "No hay información",
+                    "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
+                    "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
+                    "infoFiltered": "(Filtrado de _MAX_ total entradas)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "Mostrar _MENU_ Entradas",
+                    "loadingRecords": "Cargando...",
+                    "processing": "Procesando...",
+                    "search": "Buscar:",
+                    "zeroRecords": "Sin resultados encontrados",
+                    "paginate": {
+                        "first": "Primero",
+                        "last": "Último",
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
