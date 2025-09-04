@@ -1,5 +1,5 @@
 ---
-layout: correosAdscripciones
+layout: default
 title: "Cuentas de correo CoBach BC por adscripciones"
 description: "Lista completa de las cuentas de correo de cada adscripción de Colegio de Bachilleres del Estado de Baja California"
 date:   2025-09-04 08:29:00 -0700
