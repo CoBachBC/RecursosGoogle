@@ -74,7 +74,7 @@ layout: default
         type: "GET",
         url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTfrg1_TK2M91Gq_3kVfS0Td3T78PUhWAfsISiI_J4vKQ15hoHefuH_Or8Yu2_fQ2MR3-5_HlTYWCds/pub?gid=1463404145&single=true&output=csv",
         success: function (data) {
-            $('#grupos').append(arrayToTable(Papa.parse(data).data));
+            $('#adscripciones').append(arrayToTable(Papa.parse(data).data));
         }
     });
 </script>
