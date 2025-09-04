@@ -23,7 +23,11 @@
       json: '{{ site.baseurl }}/search.json'
     })
   </script>
-  
+  <script>
+    $(document).ready( function () {
+      let table = new DataTable('#myTable');
+    } );
+  </script>
   <script src="https://cdn.datatables.net/2.3.3/js/dataTables.min.js"></script>
   <link rel="stylesheet" href="https://cdn.datatables.net/2.3.3/css/dataTables.dataTables.min.css">
 </body>
