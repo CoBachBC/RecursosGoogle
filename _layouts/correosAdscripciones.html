@@ -56,7 +56,7 @@ layout: csvSortable
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.js"></script>
 <script>
     function arrayToTable(tableData) {
-      var table = $('<table></table>');
+      var table = $('<table id="sortable"></table>');
       var rowH = $('<tr></tr>');
       rowH.append($('<th>TIPO</th><th>MUNICIPIO</th><th>NOMBRE</th><th>CORREO</th>'));
       table.append(rowH);
@@ -78,6 +78,6 @@ layout: csvSortable
         }
     });
     $(document).ready(function() {
-        $('#adscripciones').DataTable();
+        $('#sortable').DataTable();
     });
 </script>
