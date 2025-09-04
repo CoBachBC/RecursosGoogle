@@ -5,7 +5,7 @@ description: "Prepara tu camino para ser Google Certified Educator con estos rec
 date:   2022-11-09 09:34:00 -0700
 categories: google certified educator
 by: 'Administrador de cuentas CoBach BC'
-icon: 'check'
+icon: 'award'
 ---
 
 Próximamente podrás solicitar un voucher para presentar el examen **Google Certified Educator Level 1** sin necesidad de cubrir su importe. Mientras llega ese momento puedes prepararte:
