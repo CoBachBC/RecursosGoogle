@@ -12,7 +12,7 @@ Si eres titular de alguna adscripción y requieres restablecer la contraseña de
 
 - Área a la cual va dirigida la solicitud: <strong>**TECNOLOGÍA EDUCATIVA**</strong>
 - Servicio: <strong>**ADMINISTRACIÓN DE USUARIOS NO CONVENCIONALES**</strong>
-- Escribir en la descripción <strong>**LA DIRECCIÓN COMPLETA DE LA CUENTA DE LA ADSCRIPCIÓN**</strong>
+- Agrega en la descripción <strong>**LA DIRECCIÓN COMPLETA DE LA CUENTA DE LA ADSCRIPCIÓN**</strong>
 
 <br>
 <hr>
