@@ -5,7 +5,7 @@ description: "Lista completa de las cuentas de correo de cada adscripción de Co
 date:   2025-09-04 08:29:00 -0700
 categories: correos adscripcion adscripción adscripciones organigraama lista directorio
 by: 'Administrador de cuentas CoBach BC'
-icon: 'building'
+icon: 'grid'
 ---
 
 Si eres titular de alguna adscripción y requieres restablecer la contraseña de su correo haz elabora una <u><a href="https://apps.cobachbc.edu.mx/Solicitudes/SolicitudesInf/Create">Solicitud de Servicio de Informática</a></u>. <strong>**POR FAVOR SIGUE ESTAS INDICACIONES**</strong>:
