@@ -15,7 +15,6 @@ Si eres titular de alguna adscripción y requieres restablecer la contraseña de
 - Escribir en la descripción <strong>**LA DIRECCIÓN COMPLETA DE LA CUENTA DE LA ADSCRIPCIÓN**</strong>
 <br>
 ---
-<br>
 <table id="tabla-ejemplo" class="display" style="width:100%">
             <thead>
                 <tr>
