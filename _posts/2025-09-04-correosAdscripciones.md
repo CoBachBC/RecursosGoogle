@@ -8,7 +8,7 @@ by: 'Administrador de cuentas CoBach BC'
 icon: 'grid'
 ---
 
-Si eres titular de alguna adscripción y requieres restablecer la contraseña de su correo elabora una <u><a href="https://apps.cobachbc.edu.mx/Solicitudes/SolicitudesInf/Create">Solicitud de Servicio de Informática</a></u>. <strong>**POR FAVOR SIGUE ESTAS INDICACIONES**</strong>:
+Si eres titular de alguna adscripción y requieres restablecer la contraseña de tu correo elabora una <u><a href="https://apps.cobachbc.edu.mx/Solicitudes/SolicitudesInf/Create">Solicitud de Servicio de Informática</a></u>. <strong>**POR FAVOR SIGUE ESTAS INDICACIONES**</strong>:
 
 - Área a la cual va dirigida la solicitud: <strong>**TECNOLOGÍA EDUCATIVA**</strong>
 - Servicio: <strong>**ADMINISTRACIÓN DE USUARIOS NO CONVENCIONALES**</strong>
