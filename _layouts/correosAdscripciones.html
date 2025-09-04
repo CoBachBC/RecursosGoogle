@@ -46,35 +46,7 @@ layout: csvSortable
 
     <!-- content -->
     {{ content }}
-    <p>Los elementos de la lista de correo deben actualizarse tantas veces como movimientos de adscripción existan.</p>
-    <div id="adscripciones"></div>
+    
     <!-- content -->
   </article>
 </div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.js"></script>
-<script>
-    function arrayToTable(tableData) {
-      var table = $('<table id="sortable"></table>');
-      var rowH = $('<tr></tr>');
-      rowH.append($('<th>TIPO</th><th>MUNICIPIO</th><th>NOMBRE</th><th>CORREO</th>'));
-      table.append(rowH);
-      $(tableData).each(function (i, rowData) {
-            var row = $('<tr></tr>');
-            $(rowData).each(function (j, cellData) {
-                row.append($('<td>'+cellData+'</td>'));
-            });
-            table.append(row);
-        });
-        return table;
-    }
-
-    $.ajax({
-        type: "GET",
-        url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTfrg1_TK2M91Gq_3kVfS0Td3T78PUhWAfsISiI_J4vKQ15hoHefuH_Or8Yu2_fQ2MR3-5_HlTYWCds/pub?gid=1463404145&single=true&output=csv",
-        success: function (data) {
-            $('#adscripciones').append(arrayToTable(Papa.parse(data).data));
-        }
-    });
-</script>
