@@ -22,7 +22,7 @@ Si eres titular de alguna adscripción y requieres restablecer la contraseña de
                 <tr>
                     <th>TIPO</th>
                     <th>MUNICIPIO</th>
-                    <th>NOMBRE</th>
+                    <th>ADSCRIPCIÓN</th>
                     <th>CORREO</th>
                 </tr>
             </thead>
