@@ -29,35 +29,60 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <!-- Luego, el archivo JavaScript de DataTables -->
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <!-- Incluimos la librería Papa Parse -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 
     <!-- 4. INICIALIZAR DATATABLES EN NUESTRA TABLA -->
     <script>
         // Este código se ejecuta cuando el documento HTML ha cargado completamente.
         $(document).ready(function() {
-            // Seleccionamos la tabla por su 'id' y llamamos a la función DataTable().
-            // ¡Esta única línea de código activa todas las funcionalidades!
-            $('#tabla-ejemplo').DataTable({
-                // Opcional: Aquí puedes añadir configuraciones personalizadas.
-                // Por ejemplo, para traducir la interfaz a español:
-                language: {
-                    "decimal": "",
-                    "emptyTable": "No hay información",
-                    "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
-                    "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
-                    "infoFiltered": "(Filtrado de _MAX_ total entradas)",
-                    "infoPostFix": "",
-                    "thousands": ",",
-                    "lengthMenu": "Mostrar _MENU_ Entradas",
-                    "loadingRecords": "Cargando...",
-                    "processing": "Procesando...",
-                    "search": "Buscar:",
-                    "zeroRecords": "Sin resultados encontrados",
-                    "paginate": {
-                        "first": "Primero",
-                        "last": "Último",
-                        "next": "Siguiente",
-                        "previous": "Anterior"
+            // URL del archivo CSV publicado desde Google Sheets
+            const csvUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTfrg1_TK2M91Gq_3kVfS0Td3T78PUhWAfsISiI_J4vKQ15hoHefuH_Or8Yu2_fQ2MR3-5_HlTYWCds/pub?output=csv';
+
+            // Usamos Papa.parse para procesar la URL del CSV
+            Papa.parse(csvUrl, {
+                download: true, // Esencial para que Papa Parse descargue el archivo remoto
+                header: false, // La primera fila de nuestro CSV son datos, no encabezados para el parseo.
+                skipEmptyLines: true,
+                complete: function(results) {
+                    const data = results.data;
+                    const tableBody = $('#tabla-ejemplo tbody');
+
+                    // Recorremos los datos, saltando la primera fila (índice 0) que son los encabezados en el archivo CSV
+                    for (let i = 1; i < data.length; i++) {
+                        const rowData = data[i];
+                        let row = '<tr>';
+                        row += '<td>' + rowData[0] + '</td>';
+                        row += '<td>' + rowData[1] + '</td>';
+                        row += '<td>' + rowData[2] + '</td>';
+                        row += '<td>' + rowData[3] + '</td>';
+                        row += '</tr>';
+                        tableBody.append(row);
                     }
+
+                    // MUY IMPORTANTE: Inicializamos DataTables DESPUÉS de haber poblado la tabla.
+                    $('#tabla-ejemplo').DataTable({
+                        language: {
+                            "decimal": "",
+                            "emptyTable": "No hay información",
+                            "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
+                            "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
+                            "infoFiltered": "(Filtrado de _MAX_ total entradas)",
+                            "infoPostFix": "",
+                            "thousands": ",",
+                            "lengthMenu": "Mostrar _MENU_ Entradas",
+                            "loadingRecords": "Cargando...",
+                            "processing": "Procesando...",
+                            "search": "Buscar:",
+                            "zeroRecords": "Sin resultados encontrados",
+                            "paginate": {
+                                "first": "Primero",
+                                "last": "Último",
+                                "next": "Siguiente",
+                                "previous": "Anterior"
+                            }
+                        }
+                    });
                 }
             });
         });
